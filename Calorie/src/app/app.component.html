@@ -1,0 +1,39 @@
+<style>
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: white;
+    font-weight: 600;
+  }
+  .heading {
+    margin: auto;
+    color: rgb(21, 22, 20);
+  }
+  .register {
+    background-color: skyblue;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+  }
+</style>
+
+<header>
+  <div class="toolbar">
+    <img
+      width="150"
+      src="../assets/images/images/logo.png"
+      alt="Company Logo"
+    />
+
+    <h1 class="heading">Welcome!! Let's track your calories</h1>
+    <button class="register" routerLink="/">Home</button>
+    <button class="register" routerLink="/register">Add User</button>
+  </div>
+</header>
+<router-outlet></router-outlet>
